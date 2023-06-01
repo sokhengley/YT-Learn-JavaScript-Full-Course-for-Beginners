@@ -1,14 +1,15 @@
 
 <script>
 //Example
-var ourArray = ["Stimpson", "J", "Cat"];
-ourArray.push(["happy", "joy"]);
-//ourArray now equals ["Stimpson","J","Cat", ["happy", "joy"]]
+var ourArray = [1,2,3];
+var removedFromOurArray = ourArray.pop();
+// removedFromOurArray  now equals 3, and ourArray now equals [1,2]
+
 //setup
-var myArray = [["John", 23], ["cat", 23]];
+var myArray = [["John", 23], ["cat", 2]];
 
 //only change code below this line.
-myArray.push(["dog", 3]) // new array will be [["John", 23], ["cat", 23]], ["dog" , 3]
-
+var removedFromMyArray = myArray.pop();
+console.log(myArray); // wht removing will be [["John", 23]]
 
 </script>
