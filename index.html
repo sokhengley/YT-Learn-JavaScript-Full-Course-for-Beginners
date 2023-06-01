@@ -1,25 +1,13 @@
 
 <script>
-var firstName = "Ada";
-var secondLetterOfFirstName = firstName[1];
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb) {
+    //Your code below this line
+    var result = "";
+    result += "The " + myAdjective +" " + myNoun + " " + myVerb + " to the store";
+    // Your code above this line
+    return result;
+}
+//change the words here to test your function
 
-// setup
-var lastName = "Lovelace";
-
-//only change code below this line.
-var thirdLetterOfLastName = lastName[2];
-
-
-// Bracket Notation to Find last character in string
-//Example
-
-var firstName = "Ada";
-var secondLetterOfFirstName = firstName[firstName.length - 1];
-
-// setup
-var lastName = "Lovelace";
-
-//only change code below this line.
-var thirdLetterOfLastName = lastName[lastName.length - 2];
-
+console.log(wordBlanks("dog","big","rain","quickly"));
 </script>
