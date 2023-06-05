@@ -1,14 +1,15 @@
 
 <script>
-//Set up
-function testEqual(val) {
-    if (val == 12 ) { // change this line
-        return "Equal";
+function testLogicalOr(val) {
+    //Only change code below this line
+    if (val < 10 ) {
+        return "Outside";
     }
-    return "Not Equal";
+    if (val > 20) {
+        return "Outside"; // or we can write as below if (val <10 || val >20)
+    }
+    //only change code above this line
+    return "inside";
 }
-
-//change this value to test
-console.log (testEqual(10));
 
 </script>
