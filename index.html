@@ -1,21 +1,29 @@
 
 <script>
 
-function switchOfStuff(val) {
-    var answer = "";
+function sequentialSizes(val) {
+    var answer ="";
     switch (val) {
-        case "a":
-            answer = "apple";
+        case 1:
+        case 2:
+        case 3:
+            answer = "Low";
             break;
-        case "b":
-            answer = "bird";
+        case 4:
+        case 5:
+        case 6:
+            answer = "Medium";
             break;
-        case  "c":
-            answer = "cat"
+        case 7:
+        case 8:
+        case 9:
+            answer = "Hight";
             break;
     }
+
     return answer;
 }
-    console.log(switchOfStuff("a"));
+//change this value to test
+console.log(sequentialSizes(7));
 
 </script>
