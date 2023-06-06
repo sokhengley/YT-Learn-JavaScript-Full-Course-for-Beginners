@@ -1,32 +1,21 @@
 
 <script>
-function caseInSwitch(val) {
+
+function switchOfStuff(val) {
     var answer = "";
-        switch (val) {
-            case 1:
-                answer = "alpha";
-                break;
-            case 2:
-                answer = "beta";
-                break;
-            case 3:
-                answer = "gamma";
-                break;
-            case 4:
-                answer = "delta"
-                break;
-        }
+    switch (val) {
+        case "a":
+            answer = "apple";
+            break;
+        case "b":
+            answer = "bird";
+            break;
+        case  "c":
+            answer = "cat"
+            break;
+    }
     return answer;
 }
-// Change this value to test
-console.log(caseInSwitch(3));
+    console.log(switchOfStuff("a"));
 
-/*
-Write a switch statement which tests val and sets answer for the following condition
-
-1 - "alpha"
-2 - "beta"
-3 - "gamma"
-4 - "delta"
- */
 </script>
