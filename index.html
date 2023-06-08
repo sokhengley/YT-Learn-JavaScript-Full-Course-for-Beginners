@@ -1,17 +1,25 @@
 
 <script>
- var myStorage = {
-     "car": {
-         "inside": {
-             "glove box":"maps",
-             "passenger seat": "crumbs"
-         },
-         "outside": {
-             "trunk": "jack"
-         }
+ // Setup
+ var myPlants = [
+     {
+         type: "flowers",
+         list: [
+             "rose",
+             "tulip",
+             "dandelion"
+         ]
+     },
+     {
+         type: "trees",
+         list:[
+             "fir",
+             "pine",
+             "birch"
+         ]
      }
- };
- var gloveBoxContents = myStorage.car.inside["passenger seat"]; // change this line
-
- console.log(gloveBoxContents);
+ ];
+ // Only change code below this line
+ var secondTree = myPlants[0].list[1];
+ console.log(secondTree);
 </script>
