@@ -1,44 +1,10 @@
 
 <script>
   // Setup
-  var contacts = [
-      {
-      "firstName": "Akira",
-      "lastName": "Laine",
-      "number": "013427697",
-      "likes": ["Pizza", "Coding", "Brownie Points"]
-      },
-      {
-      "firstName": "Harry",
-      "lastName": "Potter",
-      "number": "013427698",
-      "likes": ["Hogwarts", "Magic", "hagrid"]
-       },
-      {
-          "firstName": "Sherlock",
-          "lastName": "holmes",
-          "number": "013427699",
-          "likes": ["Intriguing Cases", "Violin",]
-      },
-      {
-          "firstName": "Kristian",
-          "lastName": "Vos",
-          "number": "Unknown",
-          "likes": ["JavaScript", "Gaming", "Foxes"]
-      }
-];
-  function lookUpProfile(name, prop){
-    for (var i= 0; i < contacts.length; i++) {
-        if(contacts[i].firstName === name) {
-            return contacts[i][prop] || "No such property";
-        }
-      }
-    return "No such contact";
-  }
+function randomFraction() {
+    return Math.random();
+}
+console.log(randomFraction());
 
-  // change this value to test your function
-
-  var data = lookUpProfile("Akira", "likes");
-  console.log(data);
 
 </script>
