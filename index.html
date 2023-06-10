@@ -1,15 +1,19 @@
 
 <script>
-const s = [5, 7, 2];
-function editInPlace() {
+function freezeObj() {
     "use strict";
+    const MATH_CONSTANTS = {
+        PI: 3.14
+    };
+    try {
+        MATH_CONSTANTS.PI = 99;
+    } catch ( ex) {
+        console.log(ex);
+    }
+    return MATH_CONSTANTS.PI;
 
-   //  s = [2, 5, 7];
-    s[0] = 2;
-    s[1] = 5;
-    s[2] = 7;
+    // this code is refer to change the PI from 3.14 to 99
 }
-// that is add new arivable to that array
-editInPlace();
-console.log(s);
+const PI = freezeObj();
+console.log(PI);
 </script>
