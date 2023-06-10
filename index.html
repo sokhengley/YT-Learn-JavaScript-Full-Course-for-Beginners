@@ -1,8 +1,20 @@
 
 <script>
- // Example
-function convertToInteger(str) {
-    return parseInt(str, 2)
-}
-convertToInteger("10011");
+ // condition ? statement-f-true : statement-fi-false;
+
+ function checkEqual(a,b) {
+     if(a === b) {
+         return true;
+     }
+     else {
+         return false;
+     }
+ }
+ // or we can write down as below :
+
+ function  checkEqual(a, b) {
+     return a === b ? true : false; // that is the same as above
+ }
+ checkEqual(1,2);
+
 </script>
