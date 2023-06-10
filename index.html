@@ -1,15 +1,14 @@
 
 <script>
-function checkScop() {
-    "use strict";
-    var i = "function scope"; // we need to change var to let
-    if (true) {
-        i = "block scope"; // this line we also need to use let i = "block scope";
-        console.log("Block scope i is : ", i);
-    }
-    console.log("Function scope is is :", i);
-    return i;
-}
-checkScop();
+ function printManyTimes(str) {
+     "use strict";
+     var sentence = str + "is cools!" ;
+     // we can use  const SENTENCE = str + "is cool!";
+     sentence = str + " is amazing!" // and deleted this code
 
+     for(var i = 0; i < str.length; i+=2) {
+         console.log(sentence); // this console need to chenage to SENTENCE
+     }
+ }
+ printManyTimes("freeCodeCamp");
 </script>
