@@ -1,7 +1,15 @@
 
 <script>
-function checkSign(num) {
- return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
+function checkScop() {
+    "use strict";
+    var i = "function scope"; // we need to change var to let
+    if (true) {
+        i = "block scope"; // this line we also need to use let i = "block scope";
+        console.log("Block scope i is : ", i);
+    }
+    console.log("Function scope is is :", i);
+    return i;
 }
-console.log(checkSign(0));
+checkScop();
+
 </script>
