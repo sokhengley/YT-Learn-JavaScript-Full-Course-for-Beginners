@@ -1,12 +1,10 @@
 
 <script>
- const increment = (function () {
-     return function  increment(number, value= 1) {
-         return number + value;
-     };
- })();
- console.log(increment(5, 2));
- console.log(increment(5));
-
- /* after we run the console.log we will get 7 and 6 in the second line.*/
+const sum = (function () {
+    return function sum(x, y, z) { // we can return function sum(...args) {
+        const args = [x, y, z]; // and deleted this line
+        return args.reduce((a, b) => a + b, 0);
+    };
+})();
+console.log(sum(1, 2, 3)); // the result will be 6 
 </script>
