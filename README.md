@@ -1,36 +1,30 @@
-# Learning and Practicing Workflow
+# Import & Export
 
-1. Lesson from YouTube: [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)
-2. Each chapter we create git branch
-
-```shell
->git checkout -b {chapter_title}
-```
-
-**Ex:** our first chapter title is ["Running JavaScript"](https://www.youtube.com/watch?v=PkZNo7MFNFg&t=84s), so we create git branch as below:
+- in this session, we need to use `yarn` for package manager and proxy the JavaScript.
+- install `yarn` by running below command:
 
 ```shell
->git checkout -b 01-Running-JavaScript
+>sudo npm install yarn
 ```
 
-3. Then we can practise code by follow the chapter content of the video.
-4. After complete each chapter, we need to commit code and create new branch for new chapter.
+- `npm` is the Node Package Manager, if you not yet have it, please install it from the official [website](https://nodejs.org/en/download).
 
-```shell
->git add {file_name_1} {file_name_2}
->git commit -m "input your comments here"
->git push origin {branch_name}
->git checkout -b {chapter_title}
+## Quick start:
+
+```
+$ yarn # npm install
+$ yarn build # npm run build
+````
+
+## Development
+
+Run Webpack in watch-mode to continually compile the JavaScript as you work:
+
+```
+$ yarn watch # npm run watch
 ```
 
-**Ex:** we already completed chapter 1, and the title for chapter 2 is ["Comment Your Code"](https://www.youtube.com/watch?v=PkZNo7MFNFg&t=263s), so our commands should be:
-
-```shell
->git add index.html
->git commit -m "completed chapter #1"
->git push origin 01-Running-JavaScript
->git checkout -b 02-Comment-Your-Code
-```
-
-
-_Happy Learning..._
+- this will auto build once we save our code.
+- file `index.html` is the entry point for this package, and it sources the JavaScript file from file `index.pack.js` which is proxy to file `index.js` that we are developing.
+- file `index.pack.js` is overwritten everything we build the package.
+- please also noted that `watch` mean that it watch our code change and run the build command.
